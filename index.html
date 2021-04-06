@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/app8.css">
+
+    <link rel="preload" as="image" href="/images/pizzas/pizza01.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza02.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza03.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza04.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza05.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza06.jpg">
+    <link rel="preload" as="image" href="/images/pizzas/pizza07.jpg">
+
+    <title>La Pizzeria</title>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<video playsinline autoplay muted loop id="bgvid">
+    <source src="videos/pizza.mp4" type="video/mp4">
+    <source src="videos/pizza2.mp4" type="video/mp4">
+    <source src="videos/pizza.webm" type="video/webm">
+</video>
+<div id="panel">
+    <header class="header">
+        <img src="images/logo_150.png" alt="Logo Pizza" class="logo" width="150" height="150">
+        <div class="contact-infos">
+            <div class="phone"><img src="images/icons/phone.png" alt="Téléphone" class="icons" width="32" height="32">06
+                98 72 61 96
+            </div>
+            <div class="address"><img src="images/icons/map.png" alt="Adresse" class="icons" width="32" height="32">Route
+                du Sémaphore<br>34000 Montpell-Hyères
+            </div>
+            <div class="social-networks">
+                <a href="mailto:contact@serialif.com" title="contact@serialif.com"><img src="images/icons/mail.png"
+                                                                                        alt="Email" class="icons"
+                                                                                        width="32" height="32"></a>
+                <a href="https://www.facebook.com/sebastien.filaire/" title="Facebook"><img
+                        src="images/icons/facebook.png" alt="Facebook" class="icons" width="32" height="32"></a>
+                <a href="https://www.youtube.com/channel/UCKei9GGVSmKbj3TCNZx7qvA" title="Youtube"><img
+                        src="images/icons/youtube.png" alt="Instagram" class="icons" width="32" height="32"></a>
+            </div>
+        </div>
+    </header>
+    <div class="nav" id="nav">
+        <a href="#presentation">La pizzeria</a>
+        <a href="#pizzas">La carte</a>
+        <a href="#localisation">Où nous trouver</a>
+    </div>
+
+    <div class="presentation scrollRevealLeft" id="presentation">
+        <div class="title">
+            La pizzeria
+        </div>
+        <div class="presentation-contents">
+            <div class="presentation-images">
+                <div class="slideshow"></div>
+            </div>
+            <div class="presentation-text">
+                <div>La pizzeria est située dans le centre de l'île de Montpell-Hyères, depuis plus de 10 ans.</div>
+                <div>Nous vous proposons des <strong>pizzas</strong> ainsi que des <strong>poulets rôtis</strong>.
+                </div>
+                <div>Nos plats sont élaborées à partir produits frais du jour.
+                </div>
+                <div>Vous pouvez vous faire <strong>livrer gratuitement</strong> en vélo sur toute l'île.
+                </div>
+                <div>Nous sommes ouverts de <strong>tous les jours de Juin à Septembre</strong> :<br>de <strong>11h00 à
+                    14h00 et de 18h00 à 22h00</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pizzas scrollRevealRight" id="pizzas">
+        <div class="title">
+            La carte
+        </div>
+        <div class="pizza-menu">
+            <a href="images/menu.jpg" target="_blank">
+                <div><img src="images/menu.jpg" alt="Menu" width="1920" height="1280"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="location scrollRevealLeft" id="localisation">
+        <div class="title">
+            Où nous trouver
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19630.19096627922!2d6.212160311853145!3d42.99837971199981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c8d80ea8c30349%3A0x876d575574c46349!2sRoute%20du%20S%C3%A9maphore%2C%2083400%20Hy%C3%A8res!5e0!3m2!1sfr!2sfr!4v1617437561905!5m2!1sfr!2sfr"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="business-hours">
+        <p>Pizzéria ouverte tous les jours de Juin à Septembre</p>
+        <p>De 11h00 à 14h00 et de 18h00 à 22h00</p>
+        <p>Livraison en vélo midi et soir sur toute l'île.</p>
+    </div>
+    <footer class="footer">
+        <div>Made with <span class="clockwiseRotation">❤️</span><span class="counterclockwiseRotation">❤️</span> by
+            <a href="https://www.serialif.com/">Serialif</a> | 2021
+        </div>
+    </footer>
+</div>
+
+<script src="js/app5.js"></script>
+</body>
+</html>

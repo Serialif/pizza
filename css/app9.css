@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
+    --background-color: #111111;
+    --loader-background-color: #faac0f;
+    --loader-color: #111111;
+    --nav-background-color: #faac0f;
+    --nav-color: #111111;
+    --nav-border-color: #ddd555;
     --link-color: #faac0f;
     --link-hover-color: #fff;
 }
@@ -15,68 +21,73 @@
 html.sr .load-hidden {
     visibility: hidden;
 }
+
 html.sr .scrollRevealLeft,
 html.sr .scrollRevealRight {
     visibility: hidden;
 }
 
 body {
-    background: #111111;
+    background: var(--background-color);
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
 }
 
 #loader-wrapper {
-    height:100%;
-    left:0;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 #loader {
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-    border:3px solid transparent;
-    border-radius:100%;
-    border-top-color:#faac0f;
-    display:block;
-    height:150px;
-    left:50%;
-    margin:-75px 0 0 -75px;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    border-top-color: var(--loader-color);
+    display: block;
+    height: 150px;
+    left: 50%;
+    margin: -75px 0 0 -75px;
     position: relative;
-    top:50%;
-    width:150px;
-    z-index:1001;
+    top: 50%;
+    width: 150px;
+    z-index: 1001;
 }
+
 #loader:before {
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
-    border:3px solid transparent;
-    border-radius:100%;
-    border-top-color: #faac0f;
-    bottom:5px;
-    content:"";
-    left:5px;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    border-top-color: var(--loader-color);
+    bottom: 5px;
+    content: "";
+    left: 5px;
     position: absolute;
-    right:5px;
-    top:5px;
+    right: 5px;
+    top: 5px;
 }
+
 #loader:after {
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
-    border:3px solid transparent;
-    border-radius:100%;
-    border-top-color:#faac0f;
-    bottom:12px;
-    content:"";
-    left:12px;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    border-top-color: var(--loader-color);
+    bottom: 12px;
+    content: "";
+    left: 12px;
     position: absolute;
-    right:12px;
-    top:12px;
+    right: 12px;
+    top: 12px;
 }
+
 @-webkit-keyframes spin {
-    0%   {
+    0% {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -87,8 +98,9 @@ body {
         transform: rotate(360deg);
     }
 }
+
 @keyframes spin {
-    0%   {
+    0% {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -101,47 +113,51 @@ body {
 }
 
 #loader-wrapper .loader-section {
-    background:#111111;
-    height:51%;
-    left:0;
-    position:fixed;
-    width:100%;
-    z-index:1000;
+    background: var(--loader-background-color);
+    height: 51%;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 #loader-wrapper .loader-section.section-left {
-    top:0
+    top: 0
 }
+
 #loader-wrapper .loader-section.section-right {
-    bottom:0;
+    bottom: 0;
 }
 
 .loaded #loader-wrapper .loader-section.section-left {
     -ms-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
-    -o-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+    -o-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
+
 .loaded #loader-wrapper .loader-section.section-right {
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
-    -o-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+    -o-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
+
 .loaded #loader {
     opacity: 0;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
 .loaded #loader-wrapper {
-    -ms-transform:translateX(-100%);
-    -webkit-transform:translateX(-100%);
-    transform:translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
     -o-transition: all 0.3s 1s ease-out;
     -webkit-transition: all 0.3s 1s ease-out;
     transition: all 0.3s 1s ease-out;
@@ -164,7 +180,7 @@ video {
 
 .header {
     align-items: center;
-    background: #11111188;
+    /*background: #11111188;*/
     -webkit-box-align: center;
     -webkit-box-pack: justify;
     display: -webkit-box;
@@ -213,31 +229,23 @@ video {
 
 .nav {
     align-items: center;
-    background: #111111;
-    border-bottom: 1px solid #faac0f;
-    border-top: 1px solid #faac0f;
-    -webkit-box-align: center;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background: var(--nav-background-color);
+    /*border-bottom: 1px solid var(--nav-border-color);*/
+    /*border-top: 1px solid var(--nav-border-color);*/
     display: flex;
-    -ms-flex-align: center;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    opacity: .6;
+    /*opacity: .6;*/
     padding: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: -1px;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     transition: all .3s;
     z-index: 20;
+    width: 100%;
 }
 
 .nav a {
-    color: var(--link-color);
+    color: var(--nav-color);
     font-weight: 600;
     margin: 5px;
     position: relative;
@@ -252,7 +260,7 @@ video {
 
 
 .nav a:visited {
-    color: var(--link-color);
+    color: var(--nav-color);
 }
 
 
@@ -264,7 +272,7 @@ video {
 .pizzas,
 .location {
     align-items: center;
-    background: #fff7e6;
+    background: #FFF7E6;
     border-radius: 5px;
     -webkit-box-align: center;
     -webkit-box-direction: normal;
@@ -284,10 +292,11 @@ video {
     transition: all 1s;
     width: 90%;
     z-index: 10;
+    color: var(--nav-color);
 }
 
 .title {
-    color: var(--link-color);
+    color: var(--nav-color);
     font-size: 2rem;
     font-weight: 600;
     position: relative;
@@ -406,10 +415,10 @@ video {
     text-align: center;
 }
 
-.footer{
+.footer {
     background: #000;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    /*border-bottom: 1px solid white;*/
+    /*border-top: 1px solid white;*/
     color: #fff;
     font-family: 'Fira Code', sans-serif;
     font-size: .6rem;
@@ -431,30 +440,34 @@ video {
     text-decoration: underline;
 }
 
-.clockwiseRotation{
+.clockwiseRotation {
     -webkit-animation: clockwiseRotation 2s ease-in-out infinite;
     display: inline-block;
 }
 
-.counterclockwiseRotation{
+.counterclockwiseRotation {
     -webkit-animation: counterclockwiseRotation 2s ease-in-out infinite;
     display: inline-block;
 }
 
+.blank-bottom {
+    height: 46px;
+}
+
 @-webkit-keyframes clockwiseRotation {
-    from{
+    from {
         -webkit-transform: rotate(0deg);
     }
-    to{
+    to {
         -webkit-transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes counterclockwiseRotation {
-    from{
+    from {
         -webkit-transform: rotate(0deg);
     }
-    to{
+    to {
         -webkit-transform: rotate(-360deg);
     }
 }
@@ -519,12 +532,8 @@ video {
     }
 
     .nav {
-        -webkit-box-direction: normal;
-        -webkit-box-orient: horizontal;
-        -ms-flex-direction: row;
         flex-direction: row;
         opacity: .6;
-        position: -webkit-sticky;
         position: sticky;
         top: -1px;
     }
@@ -546,7 +555,7 @@ video {
         padding: 10px;
     }
 
-    .business-hours{
+    .business-hours {
         opacity: .6;
     }
 
@@ -567,6 +576,10 @@ video {
 
     .presentation-text {
         padding-top: 0;
+    }
+
+    .blank-bottom {
+        height: 0;
     }
 
 }

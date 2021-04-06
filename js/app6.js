@@ -3,13 +3,24 @@ window.addEventListener('load', function () {
 });
 
 let nav = document.getElementById('nav')
+let footer = document.getElementById('footer')
 
 window.addEventListener('scroll', () => {
-    let rect = nav.getBoundingClientRect()
-    if (rect.y <= 0) {
-        nav.style.opacity = '1'
+    if (screen.width >= 800) {
+        let rect = nav.getBoundingClientRect()
+        if (rect.y <= 0) {
+            nav.style.opacity = '1'
+        } else {
+            nav.style.opacity = '0.6'
+        }
     } else {
-        nav.style.opacity = '0.6'
+        let rect = footer.getBoundingClientRect()
+        let a = screen.height - rect.top - rect.height
+        if (a > -22) {
+            nav.style.bottom = '20px'
+        } else {
+            nav.style.bottom = '0'
+        }
     }
 })
 

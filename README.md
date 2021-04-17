@@ -2,9 +2,6 @@
     <p align="center"><a href="https://serialif.com"><img width="80" height="80" src="https://serialif.com/images/serialif-white.png" alt="Serialif"></a>
 <hr>
 </div>
-<div align="center">
-<em>English</em>
-</div>
 
 ## Simple one page website for a pizza place
 It's a very simple site with only HTML, CSS, and a little JavaScript.

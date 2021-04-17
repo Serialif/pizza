@@ -16,16 +16,16 @@ There are 3 different versions
     <p align="center"><a href="https://pizza2.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza2.jpg" alt="Serialif"></a>
 </div>
 
-You can see the result [here](https://pizza2.serialif.com)
+<p align="center">You can see the result <a href="https://pizza2.serialif.com">here</a></p>
 
 <div align="center">
     <p align="center"><a href="https://pizza1.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza1.jpg" alt="Serialif"></a>
 </div>
 
-You can see the result [here](https://pizza1.serialif.com)
+<p align="center">You can see the result <a href="https://pizza1.serialif.com">here</a></p>
 
 <div align="center">
     <p align="center"><a href="https://pizza3.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza3.jpg" alt="Serialif"></a>
 </div>
 
-You can see the result [here](https://pizza3.serialif.com)
+<p align="center">You can see the result <a href="https://pizza3.serialif.com">here</a></p>

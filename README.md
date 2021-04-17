@@ -7,26 +7,25 @@
 </div>
 
 ## Simple one page website for a pizza place
-<div align="center">
-    <p align="center"><a href="https://pizza.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza.jpg" alt="Serialif"></a>
-</div>
 It's a very simple site with only HTML, CSS, and a little JavaScript.
 
-There is a background video and some animation.
+There are 3 different versions
 
 
-You can see the result [here](https://pizza.serialif.com)
-<hr>
 <div align="center">
-<em>Français</em>
+    <p align="center"><a href="https://pizza2.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza2.jpg" alt="Serialif"></a>
 </div>
 
-## Site web simple d'une seule page pour une pizzeria
+You can see the result [here](https://pizza2.serialif.com)
+
 <div align="center">
-    <p align="center"><a href="https://pizza.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza.jpg" alt="Serialif"></a>
+    <p align="center"><a href="https://pizza1.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza1.jpg" alt="Serialif"></a>
 </div>
-C'est un site très simple avec uniquement du HTML, du CSS et un peu de Javascript.
 
-Il y a une vidéo en arrière plan et quelques animations.
+You can see the result [here](https://pizza1.serialif.com)
 
-Vous pouvez voir le résultat [ici](https://pizza.serialif.com)
+<div align="center">
+    <p align="center"><a href="https://pizza3.serialif.com"><img width="400" height="auto" src="https://serialif.com/images/pizza3.jpg" alt="Serialif"></a>
+</div>
+
+You can see the result [here](https://pizza3.serialif.com)
